@@ -1,0 +1,25 @@
+/******************************************************************************
+
+    Pedro de Abreu Palma - 02/03/2023
+
+  1) Ler um conjunto de números reais, armazenando-o em vetor e calcular o quadrado
+das componentes deste vetor, armazenando o resultado em outro vetor. Os
+conjuntos têm 10 elementos cada. Imprimir todos os conjuntos (vetores).
+
+*******************************************************************************/
+#include <stdio.h>
+#define TAM 10 
+
+int main()
+{
+    int v[TAM], i, v2[TAM];
+    
+        for(i=0;i<TAM;i++){
+        printf("Digite um valor v[%d]", i);
+        scanf("%d", &v[i]);
+        }
+        for(i=0;i<TAM;i++){
+            v2[i] = v[i]*v[i];
+        printf("O vetor [%d] tem o valor [%d] e o seu quadrado é %d\n", i,v[i], v2[i]);
+        }
+}
