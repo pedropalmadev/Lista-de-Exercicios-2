@@ -1,0 +1,30 @@
+/******************************************************************************
+    
+    Pedro de Abreu Palma
+    
+    Faça um programa que preencha um vetor com 10 numeros reais.
+    Calcule e mostre
+    a) Soma dos numeros positivos desse vetor.
+    b) Quantidade de negativos
+
+*******************************************************************************/
+#include <stdio.h>
+#define TAM 10
+int main()
+{
+    int i, negativo=0;
+    float positivo=0,v[TAM];
+        
+        for(i=0;i<TAM;i++){
+            printf("Preencha o vetor v[%d]:", i);
+            scanf("%f",&v[i]);
+        }
+        for(i=0;i<TAM;i++) {
+            if(v[i]<0) negativo++; 
+            else       positivo = positivo + v[i];
+        }
+            printf("Quantidade de Negativos = %d\n", negativo);
+            printf("Soma dos Positivos = %f", positivo);
+
+    return 0;
+}
