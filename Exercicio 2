@@ -1,0 +1,36 @@
+/******************************************************************************
+
+    Pedro de Abreu Palma - 02/03/2023
+
+2) Faça um programa que leia um vetor de 8 posições e, em seguida, leia também dois
+valores X e Y quaisquer correspondentes a duas posições no vetor. Ao final seu
+programa deverá escrever a soma dos valores encontrados nas respectivas posições
+X e Y. x<0 && y<0, x>=8 && y>=8
+
+*******************************************************************************/
+#include <stdio.h>
+#define TAM 8
+
+int main()
+{
+    int v[TAM], x, y, total;
+    
+    for (int i=0; i<TAM; i++) {
+        printf("Digite um valor v[%d]: \n", i);
+        scanf("%d", &v[i]);
+    }
+    
+    printf("Digite o valor da primeira posição para a soma:");
+    scanf("%d", &x);
+    printf("Digite o valor da segunda posição para a soma:");
+    scanf("%d", &y);
+    
+    if (x<0 && y<0, x>=8 && y>=8)
+        printf("Posições inválida");
+    else
+        total = v[x] + v[y];
+        printf("Soma das posições %d e %d equivale a: %d", x,y,total);
+    }    
+        
+    
+    
